@@ -24,3 +24,5 @@ You write packets like this:
 ```
 
 As shown, this escapes characters and appends the end of packet mark (`"\300"`).
+
+This egg has not been benchmarked but is probably very slow.
