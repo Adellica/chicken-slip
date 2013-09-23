@@ -1,11 +1,10 @@
-
 # Chicken-SLIP
 
   [SLIP]:http://en.wikipedia.org/wiki/Serial_Line_Internet_Protocol
 
 This is a CHICKEN-implementatino of [SLIP].
 
-You can make ports which #!eof at end of packet-mark (#o300)
+You can make ports which `#!eof` at end of packet-mark (`#o300`)
 
 ```scheme
 (read-string #f (make-slip-port (open-input-string "A\300B"))) => "A"
